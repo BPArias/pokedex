@@ -8,6 +8,7 @@ const Formulario = ({guardarPokemon}) => {
         e.preventDefault()
 
         guardarPokemon(busqueda)
+        guardarBusqueda('')
     }
 
     const handleChange = e => {
@@ -17,6 +18,7 @@ const Formulario = ({guardarPokemon}) => {
     return ( 
         <form
             onSubmit={guardarNombre}
+            id="form"
         >
             <input 
                 type="text"
